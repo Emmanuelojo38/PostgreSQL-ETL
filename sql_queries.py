@@ -88,7 +88,7 @@ artist_table_insert = ("""
 INSERT INTO artists (artist_id, name, location, latitude, longitude)
 VALUES (%s, %s, %s, %s, %s)
 ON CONFLICT (artist_id)
-DON NOTHING;
+DO NOTHING;
 """)
 
 time_table_insert = ("""
@@ -110,5 +110,5 @@ WHERE songs.title=%s AND artists.name=%s AND songs.duration=%s;
 
 #QUERY LISTS
 
-create_table_queries = [user_table_create, song_table_create, artist_table_create, time_table_create, song_table_create]
+create_table_queries = [user_table_create, song_table_create, artist_table_create, time_table_create, songplay_table_create]
 drop_table_queries = [songplay_tables_drop, user_table_drop, song_table_drop, artist_table_drop, time_table_drop]
