@@ -1,7 +1,7 @@
 ## PostgreSQL-ETL
 ## Description
 ---
-This repository provides the ETL pipeline, to create and populate the sparkifydb database.
+This repository provides the ETL pipeline, to create and populate the 'sparkifydb' database.
 * The purpose of this database is to enable Sparkify to answer business questions it may have of its users, the types of songs they listen to and the artists of those songs using the data that it has in logs and files. The database provides a consistent and reliable source to store this data.
 
 * This source of data will be useful in helping Sparkify reach some of its analytical goals, for example, finding out songs that have highest popularity or times of the day which is high in traffic.
@@ -20,6 +20,6 @@ This repository provides the ETL pipeline, to create and populate the sparkifydb
 
 ## Running the ETL Pipeline
 ---
-* First, run create_tables.py to create the data tables using the schema design specified. If tables were created previously, they will be dropped and recreated.
+* First, we run create_tables.py to create the data tables using the schema design specified. If tables were created previously, they will be dropped and recreated.
 
-* Next, run etl.py to populate the data tables created.
+* Next, we run etl.py to populate the data tables created.
